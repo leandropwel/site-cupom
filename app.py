@@ -6,7 +6,17 @@ app = Flask(__name__)
 CORS(app)
 
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'uploads')
+ADMIN_FOLDER = os.path.join(os.getcwd(), 'admin')
+
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+@app.route('/')
+def home():
+    return send_from_directory(ADMIN_FOLDER, 'login.html')
+
+@app.route('/painel')
+def painel():
+    return send_from_directory(ADMIN_FOLDER, 'painel.html')
 
 @app.route('/api/cupons', methods=['GET'])
 def listar_cupons():
