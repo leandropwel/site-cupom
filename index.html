@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cupons do Dia - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .cupons-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .cupom {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 15px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+    .cupom img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .cupom h3 {
+      margin: 10px 0 5px;
+    }
+    .cupom p {
+      color: #555;
+      font-size: 14px;
+    }
+    .cupom button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .cupom button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cupons do Dia</h1>
+    <p>Os melhores descontos reunidos para você</p>
+  </header>
+  <div class="cupons-container">
+    <div class="cupom">
+      <img src="/uploads/cupom1.jpg" alt="Desconto 10%">
+      <h3>Desconto 10%</h3>
+      <p>Use este cupom e ganhe 10% de desconto em sua compra.</p>
+      <button>Ver Cupom</button>
+    </div>
+    <div class="cupom">
+      <img src="/uploads/cupom2.jpg" alt="Frete Grátis">
+      <h3>Frete Grátis</h3>
+      <p>Aproveite frete grátis nas compras acima de R$100.</p>
+      <button>Ver Cupom</button>
+    </div>
+  </div>
+</body>
+</html>
